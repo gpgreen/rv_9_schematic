@@ -1,0 +1,369 @@
+EESchema Schematic File Version 2
+LIBS:rv_9_schematic-rescue
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:AvionicSchematic
+LIBS:rv_9_schematic-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 3 3
+Title "Lighting System - Wiring"
+Date ""
+Rev "1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BUS-BAR B?
+U 1 1 5B685BAD
+P 2075 1475
+F 0 "B?" H 2075 1600 60  0000 C CNN
+F 1 "Main Bus" H 2075 1350 60  0000 C CNN
+F 2 "" H 2075 1475 60  0001 C CNN
+F 3 "" H 2075 1475 60  0001 C CNN
+	1    2075 1475
+	1    0    0    -1  
+$EndComp
+$Comp
+L LCL G?
+U 1 1 5B685C4C
+P 1350 5775
+F 0 "G?" H 1425 5900 60  0000 C CNN
+F 1 "LCL" H 1350 5650 60  0000 C CNN
+F 2 "" H 1350 5775 60  0001 C CNN
+F 3 "" H 1350 5775 60  0001 C CNN
+	1    1350 5775
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_SPST SW?
+U 1 1 5B685D35
+P 1350 2250
+F 0 "SW?" H 1350 2375 50  0000 C CNN
+F 1 "Dome Light" H 1350 2150 50  0000 C CNN
+F 2 "" H 1350 2250 50  0001 C CNN
+F 3 "" H 1350 2250 50  0001 C CNN
+	1    1350 2250
+	0    -1   1    0   
+$EndComp
+$Comp
+L Fuse F?
+U 1 1 5B685DEA
+P 1350 1750
+F 0 "F?" V 1430 1750 50  0000 C CNN
+F 1 "Fuse" V 1275 1750 50  0000 C CNN
+F 2 "" V 1280 1750 50  0001 C CNN
+F 3 "" H 1350 1750 50  0001 C CNN
+	1    1350 1750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Lamp LA?
+U 1 1 5B685EA7
+P 4775 4275
+F 0 "LA?" H 4800 4425 50  0000 L CNN
+F 1 "Green Nav Light" H 4800 4125 50  0000 L CNN
+F 2 "" V 4775 4375 50  0001 C CNN
+F 3 "" V 4775 4375 50  0001 C CNN
+	1    4775 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Fuse F?
+U 1 1 5B686382
+P 1800 1750
+F 0 "F?" V 1880 1750 50  0000 C CNN
+F 1 "Fuse" V 1725 1750 50  0000 C CNN
+F 2 "" V 1730 1750 50  0001 C CNN
+F 3 "" H 1800 1750 50  0001 C CNN
+	1    1800 1750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Fuse F?
+U 1 1 5B6863BE
+P 2350 1750
+F 0 "F?" V 2430 1750 50  0000 C CNN
+F 1 "Fuse" V 2275 1750 50  0000 C CNN
+F 2 "" V 2280 1750 50  0001 C CNN
+F 3 "" H 2350 1750 50  0001 C CNN
+	1    2350 1750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Fuse F?
+U 1 1 5B6863FB
+P 2750 1750
+F 0 "F?" V 2830 1750 50  0000 C CNN
+F 1 "Fuse" V 2675 1750 50  0000 C CNN
+F 2 "" V 2680 1750 50  0001 C CNN
+F 3 "" H 2750 1750 50  0001 C CNN
+	1    2750 1750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L SW_SPST SW?
+U 1 1 5B686C5D
+P 1800 2250
+F 0 "SW?" H 1800 2375 50  0000 C CNN
+F 1 "Taxi Light" H 1800 2150 50  0000 C CNN
+F 2 "" H 1800 2250 50  0001 C CNN
+F 3 "" H 1800 2250 50  0001 C CNN
+	1    1800 2250
+	0    -1   1    0   
+$EndComp
+$Comp
+L SW_SPST SW?
+U 1 1 5B686CAE
+P 2350 2250
+F 0 "SW?" H 2350 2375 50  0000 C CNN
+F 1 "Landing Light" H 2350 2150 50  0000 C CNN
+F 2 "" H 2350 2250 50  0001 C CNN
+F 3 "" H 2350 2250 50  0001 C CNN
+	1    2350 2250
+	0    -1   1    0   
+$EndComp
+$Comp
+L SW_SPST SW?
+U 1 1 5B686CF6
+P 2750 2250
+F 0 "SW?" H 2750 2375 50  0000 C CNN
+F 1 "Nav Lights" H 2750 2150 50  0000 C CNN
+F 2 "" H 2750 2250 50  0001 C CNN
+F 3 "" H 2750 2250 50  0001 C CNN
+	1    2750 2250
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1350 1900 1350 2050
+Wire Wire Line
+	1350 2050 1375 2050
+Wire Wire Line
+	1800 1900 1800 2050
+Wire Wire Line
+	2350 1900 2350 2050
+Wire Wire Line
+	2750 1900 2750 2050
+$Comp
+L Lamp LA?
+U 1 1 5B6875D4
+P 8550 3925
+F 0 "LA?" H 8575 4075 50  0000 L CNN
+F 1 "Red Nav Light" H 8575 3775 50  0000 L CNN
+F 2 "" V 8550 4025 50  0001 C CNN
+F 3 "" V 8550 4025 50  0001 C CNN
+	1    8550 3925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Lamp LA?
+U 1 1 5B68764C
+P 5850 4675
+F 0 "LA?" H 5875 4825 50  0000 L CNN
+F 1 "White Nav Light" H 5875 4525 50  0000 L CNN
+F 2 "" V 5850 4775 50  0001 C CNN
+F 3 "" V 5850 4775 50  0001 C CNN
+	1    5850 4675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2450 2750 3300
+Wire Wire Line
+	2750 3300 4775 3300
+Wire Wire Line
+	4775 3300 4775 4075
+Wire Wire Line
+	2750 2450 2850 2450
+Wire Wire Line
+	2800 2450 2800 2825
+Wire Wire Line
+	2800 2825 5850 2825
+Wire Wire Line
+	8550 2600 8550 3725
+Wire Wire Line
+	2850 2450 2850 2600
+Wire Wire Line
+	2850 2600 8550 2600
+Wire Wire Line
+	5850 2825 5850 4475
+Connection ~ 2800 2450
+$Comp
+L LCL G?
+U 1 1 5B6879B3
+P 4775 4900
+F 0 "G?" H 4850 5025 60  0000 C CNN
+F 1 "LCL" H 4775 4775 60  0000 C CNN
+F 2 "" H 4775 4900 60  0001 C CNN
+F 3 "" H 4775 4900 60  0001 C CNN
+	1    4775 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LCL G?
+U 1 1 5B687C95
+P 8550 4700
+F 0 "G?" H 8625 4825 60  0000 C CNN
+F 1 "LCL" H 8550 4575 60  0000 C CNN
+F 2 "" H 8550 4700 60  0001 C CNN
+F 3 "" H 8550 4700 60  0001 C CNN
+	1    8550 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LCL G?
+U 1 1 5B687D12
+P 5850 5250
+F 0 "G?" H 5925 5375 60  0000 C CNN
+F 1 "LCL" H 5850 5125 60  0000 C CNN
+F 2 "" H 5850 5250 60  0001 C CNN
+F 3 "" H 5850 5250 60  0001 C CNN
+	1    5850 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4775 4475 4775 4625
+Wire Wire Line
+	8550 4125 8550 4425
+Wire Wire Line
+	5850 4900 5850 4975
+$Comp
+L Lamp LA?
+U 1 1 5B688FD7
+P 4000 4250
+F 0 "LA?" H 4025 4400 50  0000 L CNN
+F 1 "Landing Light" H 4025 4100 50  0000 L CNN
+F 2 "" V 4000 4350 50  0001 C CNN
+F 3 "" V 4000 4350 50  0001 C CNN
+	1    4000 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Lamp LA?
+U 1 1 5B6890D4
+P 7800 3900
+F 0 "LA?" H 7825 4050 50  0000 L CNN
+F 1 "Taxi Light" H 7825 3750 50  0000 L CNN
+F 2 "" V 7800 4000 50  0001 C CNN
+F 3 "" V 7800 4000 50  0001 C CNN
+	1    7800 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2450 2350 3550
+Wire Wire Line
+	2350 3550 4000 3550
+Wire Wire Line
+	4000 3550 4000 4050
+Wire Wire Line
+	7800 3050 7800 3700
+$Comp
+L Lamp LA?
+U 1 1 5B689464
+P 1350 4950
+F 0 "LA?" H 1375 5100 50  0000 L CNN
+F 1 "Dome Light" H 1375 4800 50  0000 L CNN
+F 2 "" V 1350 5050 50  0001 C CNN
+F 3 "" V 1350 5050 50  0001 C CNN
+	1    1350 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2450 1350 4750
+$Comp
+L LCL G?
+U 1 1 5B68A056
+P 7800 4700
+F 0 "G?" H 7875 4825 60  0000 C CNN
+F 1 "LCL" H 7800 4575 60  0000 C CNN
+F 2 "" H 7800 4700 60  0001 C CNN
+F 3 "" H 7800 4700 60  0001 C CNN
+	1    7800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LCL G?
+U 1 1 5B68A3B4
+P 4000 4925
+F 0 "G?" H 4075 5050 60  0000 C CNN
+F 1 "LCL" H 4000 4800 60  0000 C CNN
+F 2 "" H 4000 4925 60  0001 C CNN
+F 3 "" H 4000 4925 60  0001 C CNN
+	1    4000 4925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 5150 1350 5500
+Wire Wire Line
+	7800 4100 7800 4425
+Wire Wire Line
+	4000 4450 4000 4650
+Wire Wire Line
+	7800 3050 1800 3050
+Wire Wire Line
+	1800 3050 1800 2450
+Wire Notes Line
+	3225 2400 3225 3775
+Wire Notes Line
+	3800 3900 4950 3900
+Wire Notes Line
+	5650 3900 6025 3900
+Wire Notes Line
+	7675 3450 8700 3450
+Text Notes 4875 3850 0    60   ~ 0
+Cabin
+Text Notes 4875 4025 0    60   ~ 0
+Left Wing
+Text Notes 5975 3850 0    60   ~ 0
+Cabin
+Text Notes 8625 3400 0    60   ~ 0
+Cabin
+Text Notes 3300 2500 0    60   ~ 0
+Cabin
+Text Notes 5950 4025 0    60   ~ 0
+Aft Fuse
+Text Notes 8650 3575 0    60   ~ 0
+Right Wing
+Text Notes 2925 2500 0    60   ~ 0
+Panel
+Wire Notes Line
+	1100 3875 1650 3875
+Text Notes 975  3825 0    60   ~ 0
+Panel
+Text Notes 975  4000 0    60   ~ 0
+Cabin
+$EndSCHEMATC
