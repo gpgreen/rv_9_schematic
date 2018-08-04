@@ -31,6 +31,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:AvionicSchematic
+LIBS:rv_9_schematic-cache
 EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -38,7 +40,7 @@ encoding utf-8
 Sheet 1 2
 Title "RV-9A Schematics"
 Date ""
-Rev ""
+Rev "1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -53,4 +55,6 @@ F1 "rv_9_schematic_1.sch" 60
 F2 "12V" I L 4050 3850 60 
 F3 "GND" I L 4050 4050 60 
 $EndSheet
+Text Notes 4450 4125 0    60   ~ 0
+Trim
 $EndSCHEMATC
