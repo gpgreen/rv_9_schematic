@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:rv_9_schematic-rescue
 LIBS:power
 LIBS:device
 LIBS:switches

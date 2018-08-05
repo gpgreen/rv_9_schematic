@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:rv_9_schematic-rescue
 LIBS:power
 LIBS:device
 LIBS:switches
@@ -113,8 +112,6 @@ Text Notes 1900 3150 0    60   ~ 0
 Elevator
 Text Notes 1950 3800 0    60   ~ 0
 PTT
-Text HLabel 1225 7750 0    60   Input ~ 0
-12V
 Wire Wire Line
 	2650 1600 2850 1600
 Connection ~ 2850 1600
@@ -122,10 +119,10 @@ Wire Wire Line
 	2650 2150 2850 2150
 Connection ~ 2850 2150
 Wire Wire Line
-	2650 2750 2850 2750
+	2850 2750 2650 2750
 Connection ~ 2850 2750
 Wire Wire Line
-	2650 3350 2850 3350
+	2850 3350 2650 3350
 Connection ~ 2850 3350
 Wire Wire Line
 	2850 3950 2650 3950
@@ -197,15 +194,7 @@ PTT
 Wire Wire Line
 	3525 1250 5200 1250
 Wire Wire Line
-	5200 1250 5200 1600
-Wire Wire Line
-	5200 1600 5200 2150
-Wire Wire Line
-	5200 2150 5200 2750
-Wire Wire Line
-	5200 2750 5200 3350
-Wire Wire Line
-	5200 3350 5200 3950
+	5200 1250 5200 3950
 Wire Wire Line
 	5000 1600 5200 1600
 Connection ~ 5200 1600
@@ -561,9 +550,7 @@ Wire Wire Line
 Wire Wire Line
 	1575 5900 1575 6150
 Wire Wire Line
-	1975 5775 1975 6150
-Wire Wire Line
-	1975 6150 1975 6450
+	1975 5775 1975 6450
 Connection ~ 1975 6150
 $Comp
 L Mini-DIN-6 J2
@@ -640,8 +627,6 @@ F 3 "" H 4450 7025 60  0001 C CNN
 $EndComp
 Wire Wire Line
 	3175 4500 3550 4500
-Text HLabel 950  5500 0    60   Input ~ 0
-12V
 Wire Notes Line
 	9225 2750 9225 3750
 Wire Notes Line
@@ -686,15 +671,7 @@ Text Notes 4475 5500 0    60   ~ 0
 Cabin
 Connection ~ 2850 3950
 Wire Wire Line
-	2850 1600 2850 2150
-Wire Wire Line
-	2850 2150 2850 2750
-Wire Wire Line
-	2850 2750 2850 3350
-Wire Wire Line
-	2850 3350 2850 3950
-Wire Wire Line
-	2850 3950 2850 5425
+	2850 1600 2850 5425
 $Comp
 L LCL G?
 U 1 1 5B68237B
@@ -716,4 +693,36 @@ Text Notes 2100 7450 0    60   ~ 0
 Aileron\nTrim
 Text Notes 975  5825 0    60   ~ 0
 Instrument\nLights
+$Comp
+L SW_SPST SW?
+U 1 1 5B6739D6
+P 6225 3400
+F 0 "SW?" H 6225 3525 50  0000 C CNN
+F 1 "Flap Down" H 6225 3300 50  0000 C CNN
+F 2 "" H 6225 3400 50  0001 C CNN
+F 3 "" H 6225 3400 50  0001 C CNN
+	1    6225 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LCL G?
+U 1 1 5B673BCE
+P 5800 3925
+F 0 "G?" H 5875 4050 60  0000 C CNN
+F 1 "LCL" H 5800 3800 60  0000 C CNN
+F 2 "" H 5800 3925 60  0001 C CNN
+F 3 "" H 5800 3925 60  0001 C CNN
+	1    5800 3925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3650 5800 3400
+Wire Wire Line
+	5800 3400 6025 3400
+Wire Wire Line
+	7000 4075 6525 4075
+Wire Wire Line
+	6525 4075 6525 3400
+Wire Wire Line
+	6525 3400 6425 3400
 $EndSCHEMATC

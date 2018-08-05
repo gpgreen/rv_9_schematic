@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:rv_9_schematic-rescue
 LIBS:power
 LIBS:device
 LIBS:switches
@@ -53,11 +52,7 @@ S 4050 3650 950  850
 U 5B61469B
 F0 "Trim System" 60
 F1 "rv_9_schematic_1.sch" 60
-F2 "12V" I L 4050 3850 60 
-F3 "GND" I L 4050 4050 60 
 $EndSheet
-Text Notes 4450 4125 0    60   ~ 0
-Trim
 $Sheet
 S 5400 3650 1000 850 
 U 5B685AE0
