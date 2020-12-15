@@ -1,39 +1,5 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:AvionicSchematic
-LIBS:rv_9_schematic-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
@@ -59,7 +25,6 @@ Text Notes 1950 3800 0    60   ~ 0
 PTT
 Wire Wire Line
 	2650 1600 2850 1600
-Connection ~ 2850 1600
 Wire Wire Line
 	2650 2150 2850 2150
 Connection ~ 2850 2150
@@ -84,7 +49,7 @@ PTT
 Wire Wire Line
 	3525 1250 5200 1250
 Wire Wire Line
-	5200 1250 5200 3950
+	5200 1250 5200 1600
 Wire Wire Line
 	5000 1600 5200 1600
 Connection ~ 5200 1600
@@ -100,7 +65,7 @@ Connection ~ 5200 3350
 Wire Wire Line
 	5200 3950 5000 3950
 $Comp
-L RayAllenServo S1
+L AvionicSchematic:RayAllenServo S1
 U 1 1 5B6530DF
 P 9825 3250
 F 0 "S1" H 9450 3650 60  0000 C CNN
@@ -111,7 +76,7 @@ F 3 "" H 9425 3200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L RayAllenServo S2
+L AvionicSchematic:RayAllenServo S2
 U 1 1 5B65324A
 P 9800 4550
 F 0 "S2" H 9425 4950 60  0000 C CNN
@@ -122,7 +87,7 @@ F 3 "" H 9400 4500 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LEDPOSITION_INDICATOR S4
+L AvionicSchematic:LEDPOSITION_INDICATOR S4
 U 1 1 5B6532A0
 P 8400 1925
 F 0 "S4" H 8200 2300 60  0000 C CNN
@@ -133,7 +98,7 @@ F 3 "" H 8400 1925 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TrimRelay T1
+L AvionicSchematic:TrimRelay T1
 U 1 1 5B6556F7
 P 7750 3850
 F 0 "T1" H 7250 4125 60  0000 C CNN
@@ -238,7 +203,7 @@ Wire Wire Line
 Wire Wire Line
 	7000 3925 7000 3875
 $Comp
-L LEDPOSITION_INDICATOR S3
+L AvionicSchematic:LEDPOSITION_INDICATOR S3
 U 1 1 5B658112
 P 8925 6175
 F 0 "S3" H 8725 6550 60  0000 C CNN
@@ -287,9 +252,11 @@ Wire Wire Line
 Wire Wire Line
 	6800 2200 7925 2200
 $Comp
-L Fuse F1
+L rv_9_schematic-rescue:Fuse F1
 U 1 1 5B65A0B7
 P 2525 7425
+AR Path="/5B65A0B7" Ref="F1"  Part="1" 
+AR Path="/5B61469B/5B65A0B7" Ref="F1"  Part="1" 
 F 0 "F1" V 2605 7425 50  0000 C CNN
 F 1 "1A" V 2450 7425 50  0000 C CNN
 F 2 "" V 2455 7425 50  0001 C CNN
@@ -300,9 +267,11 @@ $EndComp
 Wire Wire Line
 	7650 4350 7650 6025
 $Comp
-L Fuse F2
+L rv_9_schematic-rescue:Fuse F2
 U 1 1 5B65B860
 P 2875 7425
+AR Path="/5B65B860" Ref="F2"  Part="1" 
+AR Path="/5B61469B/5B65B860" Ref="F2"  Part="1" 
 F 0 "F2" V 2955 7425 50  0000 C CNN
 F 1 "1A" V 2800 7425 50  0000 C CNN
 F 2 "" V 2805 7425 50  0001 C CNN
@@ -325,7 +294,7 @@ Pilot Stick Grip
 Text Notes 4175 1125 0    60   ~ 0
 Copilot Stick Grip
 $Comp
-L BUS-BAR B1
+L AvionicSchematic:BUS-BAR B1
 U 1 1 5B666EE4
 P 2200 7750
 F 0 "B1" H 2200 7875 60  0000 C CNN
@@ -366,7 +335,7 @@ Wire Wire Line
 Wire Wire Line
 	5075 6350 5075 6750
 $Comp
-L LCL G5
+L AvionicSchematic:LCL G5
 U 1 1 5B66F567
 P 7000 2625
 F 0 "G5" H 7075 2750 60  0000 C CNN
@@ -377,7 +346,7 @@ F 3 "" H 7000 2625 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LCL G3
+L AvionicSchematic:LCL G3
 U 1 1 5B66F920
 P 4775 7025
 F 0 "G3" H 4850 7150 60  0000 C CNN
@@ -388,7 +357,7 @@ F 3 "" H 4775 7025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LCL G4
+L AvionicSchematic:LCL G4
 U 1 1 5B66FD52
 P 5075 7025
 F 0 "G4" H 5150 7150 60  0000 C CNN
@@ -401,7 +370,7 @@ $EndComp
 Wire Wire Line
 	2875 7275 2875 6250
 $Comp
-L Mini-DIN-6 J2
+L rv_9_schematic-rescue:Mini-DIN-6 J2
 U 1 1 5B672BF9
 P 3850 4600
 F 0 "J2" H 3850 4850 50  0000 C CNN
@@ -412,7 +381,7 @@ F 3 "" H 3850 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mini-DIN-6 J1
+L rv_9_schematic-rescue:Mini-DIN-6 J1
 U 1 1 5B672CE7
 P 3825 3825
 F 0 "J1" H 3825 4075 50  0000 C CNN
@@ -463,7 +432,7 @@ Wire Wire Line
 Wire Wire Line
 	4350 3925 4125 3925
 $Comp
-L LCL G2
+L AvionicSchematic:LCL G2
 U 1 1 5B6771A7
 P 4450 7025
 F 0 "G2" H 4525 7150 60  0000 C CNN
@@ -519,9 +488,9 @@ Text Notes 4475 5500 0    60   ~ 0
 Cabin
 Connection ~ 2850 3950
 Wire Wire Line
-	2850 1600 2850 5425
+	2850 1600 2850 2150
 $Comp
-L LCL G1
+L AvionicSchematic:LCL G1
 U 1 1 5B68237B
 P 4150 7025
 F 0 "G1" H 4225 7150 60  0000 C CNN
@@ -640,7 +609,7 @@ TRIM-IND-LT2
 Text HLabel 1225 7750 0    60   Input ~ 0
 E-BUS
 $Comp
-L SW_SPDT SWP4
+L rv_9_schematic-rescue:SW_SPDT SWP4
 U 1 1 5B7A73EF
 P 2450 1500
 F 0 "SWP4" H 2450 1670 50  0000 C CNN
@@ -651,7 +620,7 @@ F 3 "" H 2450 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_SPDT SWP2
+L rv_9_schematic-rescue:SW_SPDT SWP2
 U 1 1 5B7A88E9
 P 2450 2050
 F 0 "SWP2" H 2450 2220 50  0000 C CNN
@@ -662,7 +631,7 @@ F 3 "" H 2450 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_SPDT SWP3
+L rv_9_schematic-rescue:SW_SPDT SWP3
 U 1 1 5B7A9058
 P 2450 2650
 F 0 "SWP3" H 2450 2820 50  0000 C CNN
@@ -673,7 +642,7 @@ F 3 "" H 2450 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_SPDT SWP1
+L rv_9_schematic-rescue:SW_SPDT SWP1
 U 1 1 5B7A9635
 P 2450 3250
 F 0 "SWP1" H 2450 3420 50  0000 C CNN
@@ -684,7 +653,7 @@ F 3 "" H 2450 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_SPDT SWP5
+L rv_9_schematic-rescue:SW_SPDT SWP5
 U 1 1 5B7A9743
 P 2450 3850
 F 0 "SWP5" H 2450 4020 50  0000 C CNN
@@ -695,7 +664,7 @@ F 3 "" H 2450 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_SPDT SWC4
+L rv_9_schematic-rescue:SW_SPDT SWC4
 U 1 1 5B7AA0B6
 P 4800 1500
 F 0 "SWC4" H 4800 1670 50  0000 C CNN
@@ -706,7 +675,7 @@ F 3 "" H 4800 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_SPDT SWC2
+L rv_9_schematic-rescue:SW_SPDT SWC2
 U 1 1 5B7AA6AB
 P 4800 2050
 F 0 "SWC2" H 4800 2220 50  0000 C CNN
@@ -717,7 +686,7 @@ F 3 "" H 4800 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_SPDT SWC3
+L rv_9_schematic-rescue:SW_SPDT SWC3
 U 1 1 5B7AA78E
 P 4800 2650
 F 0 "SWC3" H 4800 2820 50  0000 C CNN
@@ -728,7 +697,7 @@ F 3 "" H 4800 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_SPDT SWC1
+L rv_9_schematic-rescue:SW_SPDT SWC1
 U 1 1 5B7AA872
 P 4800 3250
 F 0 "SWC1" H 4800 3420 50  0000 C CNN
@@ -739,7 +708,7 @@ F 3 "" H 4800 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_SPDT SWC5
+L rv_9_schematic-rescue:SW_SPDT SWC5
 U 1 1 5B7AA95B
 P 4800 3850
 F 0 "SWC5" H 4800 4020 50  0000 C CNN
@@ -751,4 +720,20 @@ F 3 "" H 4800 3850 50  0001 C CNN
 $EndComp
 Text Label 4325 4700 0    60   ~ 0
 13
+Wire Wire Line
+	2850 2150 2850 2750
+Wire Wire Line
+	2850 2750 2850 3350
+Wire Wire Line
+	2850 3350 2850 3950
+Wire Wire Line
+	5200 1600 5200 2150
+Wire Wire Line
+	5200 2150 5200 2750
+Wire Wire Line
+	5200 2750 5200 3350
+Wire Wire Line
+	5200 3350 5200 3950
+Wire Wire Line
+	2850 3950 2850 5425
 $EndSCHEMATC

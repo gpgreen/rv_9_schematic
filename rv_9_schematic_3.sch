@@ -1,39 +1,5 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:AvionicSchematic
-LIBS:rv_9_schematic-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
@@ -48,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L BUS-BAR B3
+L AvionicSchematic:BUS-BAR B3
 U 1 1 5B79C072
 P 2575 6525
 F 0 "B3" H 2575 6650 60  0000 C CNN
@@ -59,9 +25,11 @@ F 3 "" H 2575 6525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Fuse F7
+L rv_9_schematic-rescue:Fuse F7
 U 1 1 5B79C1B1
 P 2900 6200
+AR Path="/5B79C1B1" Ref="F7"  Part="1" 
+AR Path="/5B79C069/5B79C1B1" Ref="F7"  Part="1" 
 F 0 "F7" V 2980 6200 50  0000 C CNN
 F 1 "Fuse" V 2825 6200 50  0000 C CNN
 F 2 "" V 2830 6200 50  0001 C CNN
@@ -70,7 +38,7 @@ F 3 "" H 2900 6200 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SW_SPST SW6
+L rv_9_schematic-rescue:SW_SPST SW6
 U 1 1 5B79C317
 P 5150 3950
 F 0 "SW6" H 5150 4075 50  0000 C CNN
@@ -81,7 +49,7 @@ F 3 "" H 5150 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Motor_DC M1
+L AvionicSchematic:Motor_DC M1
 U 1 1 5B79C3CE
 P 5400 4975
 F 0 "M1" H 5500 5075 50  0000 L CNN
@@ -92,7 +60,7 @@ F 3 "" H 5400 4885 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_DPDT_on-off-on SW5
+L AvionicSchematic:SW_DPDT_on-off-on SW5
 U 1 1 5B79CFC7
 P 3825 5000
 F 0 "SW5" H 3825 5325 50  0000 C CNN
@@ -135,7 +103,7 @@ Wire Wire Line
 Wire Wire Line
 	4025 4700 4150 4700
 $Comp
-L LCL G15
+L AvionicSchematic:LCL G15
 U 1 1 5B79D46D
 P 3250 5600
 F 0 "G15" H 3325 5725 60  0000 C CNN
@@ -150,7 +118,7 @@ Wire Wire Line
 Wire Wire Line
 	3250 5150 3250 5325
 $Comp
-L LCL G16
+L AvionicSchematic:LCL G16
 U 1 1 5B79D675
 P 5475 4325
 F 0 "G16" H 5550 4450 60  0000 C CNN

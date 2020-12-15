@@ -1,39 +1,5 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:AvionicSchematic
-LIBS:rv_9_schematic-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
@@ -48,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L BUS-BAR B2
+L AvionicSchematic:BUS-BAR B2
 U 1 1 5B685BAD
 P 2075 1475
 F 0 "B2" H 2075 1600 60  0000 C CNN
@@ -59,7 +25,7 @@ F 3 "" H 2075 1475 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LCL G6
+L AvionicSchematic:LCL G6
 U 1 1 5B685C4C
 P 1350 5775
 F 0 "G6" H 1425 5900 60  0000 C CNN
@@ -70,7 +36,7 @@ F 3 "" H 1350 5775 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_SPST SW1
+L rv_9_schematic-rescue:SW_SPST SW1
 U 1 1 5B685D35
 P 1350 2250
 F 0 "SW1" H 1350 2375 50  0000 C CNN
@@ -81,9 +47,11 @@ F 3 "" H 1350 2250 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Fuse F3
+L rv_9_schematic-rescue:Fuse F3
 U 1 1 5B685DEA
 P 1350 1800
+AR Path="/5B685DEA" Ref="F3"  Part="1" 
+AR Path="/5B685AE0/5B685DEA" Ref="F3"  Part="1" 
 F 0 "F3" V 1430 1800 50  0000 C CNN
 F 1 "5A" V 1275 1800 50  0000 C CNN
 F 2 "" V 1280 1800 50  0001 C CNN
@@ -92,7 +60,7 @@ F 3 "" H 1350 1800 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Lamp LA4
+L rv_9_schematic-rescue:Lamp LA4
 U 1 1 5B685EA7
 P 4775 4275
 F 0 "LA4" H 4800 4425 50  0000 L CNN
@@ -103,9 +71,11 @@ F 3 "" V 4775 4375 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Fuse F4
+L rv_9_schematic-rescue:Fuse F4
 U 1 1 5B686382
 P 1900 1800
+AR Path="/5B686382" Ref="F4"  Part="1" 
+AR Path="/5B685AE0/5B686382" Ref="F4"  Part="1" 
 F 0 "F4" V 1980 1800 50  0000 C CNN
 F 1 "10A" V 1825 1800 50  0000 C CNN
 F 2 "" V 1830 1800 50  0001 C CNN
@@ -114,9 +84,11 @@ F 3 "" H 1900 1800 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Fuse F5
+L rv_9_schematic-rescue:Fuse F5
 U 1 1 5B6863BE
 P 2400 1800
+AR Path="/5B6863BE" Ref="F5"  Part="1" 
+AR Path="/5B685AE0/5B6863BE" Ref="F5"  Part="1" 
 F 0 "F5" V 2480 1800 50  0000 C CNN
 F 1 "10A" V 2325 1800 50  0000 C CNN
 F 2 "" V 2330 1800 50  0001 C CNN
@@ -125,9 +97,11 @@ F 3 "" H 2400 1800 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Fuse F6
+L rv_9_schematic-rescue:Fuse F6
 U 1 1 5B6863FB
 P 2750 1800
+AR Path="/5B6863FB" Ref="F6"  Part="1" 
+AR Path="/5B685AE0/5B6863FB" Ref="F6"  Part="1" 
 F 0 "F6" V 2830 1800 50  0000 C CNN
 F 1 "10A" V 2675 1800 50  0000 C CNN
 F 2 "" V 2680 1800 50  0001 C CNN
@@ -136,7 +110,7 @@ F 3 "" H 2750 1800 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SW_SPST SW2
+L rv_9_schematic-rescue:SW_SPST SW2
 U 1 1 5B686C5D
 P 1900 2250
 F 0 "SW2" H 1900 2375 50  0000 C CNN
@@ -147,7 +121,7 @@ F 3 "" H 1900 2250 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L SW_SPST SW3
+L rv_9_schematic-rescue:SW_SPST SW3
 U 1 1 5B686CAE
 P 2400 2250
 F 0 "SW3" H 2400 2375 50  0000 C CNN
@@ -158,7 +132,7 @@ F 3 "" H 2400 2250 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L SW_SPST SW4
+L rv_9_schematic-rescue:SW_SPST SW4
 U 1 1 5B686CF6
 P 2750 2250
 F 0 "SW4" H 2750 2375 50  0000 C CNN
@@ -179,7 +153,7 @@ Wire Wire Line
 Wire Wire Line
 	2750 1950 2750 2050
 $Comp
-L Lamp LA8
+L rv_9_schematic-rescue:Lamp LA8
 U 1 1 5B6875D4
 P 8550 3925
 F 0 "LA8" H 8575 4075 50  0000 L CNN
@@ -190,7 +164,7 @@ F 3 "" V 8550 4025 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Lamp LA6
+L rv_9_schematic-rescue:Lamp LA6
 U 1 1 5B68764C
 P 5850 4675
 F 0 "LA6" H 5875 4825 50  0000 L CNN
@@ -207,7 +181,7 @@ Wire Wire Line
 Wire Wire Line
 	4775 3300 4775 4075
 Wire Wire Line
-	2750 2450 3100 2450
+	2750 2450 2800 2450
 Wire Wire Line
 	2800 2450 2800 2825
 Wire Wire Line
@@ -222,7 +196,7 @@ Wire Wire Line
 	5850 2825 5850 4475
 Connection ~ 2800 2450
 $Comp
-L LCL G10
+L AvionicSchematic:LCL G10
 U 1 1 5B6879B3
 P 4775 4900
 F 0 "G10" H 4850 5025 60  0000 C CNN
@@ -233,7 +207,7 @@ F 3 "" H 4775 4900 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LCL G14
+L AvionicSchematic:LCL G14
 U 1 1 5B687C95
 P 8550 4700
 F 0 "G14" H 8625 4825 60  0000 C CNN
@@ -244,7 +218,7 @@ F 3 "" H 8550 4700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LCL G12
+L AvionicSchematic:LCL G12
 U 1 1 5B687D12
 P 5850 5250
 F 0 "G12" H 5925 5375 60  0000 C CNN
@@ -261,7 +235,7 @@ Wire Wire Line
 Wire Wire Line
 	5850 4900 5850 4975
 $Comp
-L Lamp LA2
+L rv_9_schematic-rescue:Lamp LA2
 U 1 1 5B688FD7
 P 4000 4250
 F 0 "LA2" H 4025 4400 50  0000 L CNN
@@ -272,7 +246,7 @@ F 3 "" V 4000 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Lamp LA7
+L rv_9_schematic-rescue:Lamp LA7
 U 1 1 5B6890D4
 P 7800 3900
 F 0 "LA7" H 7825 4050 50  0000 L CNN
@@ -291,7 +265,7 @@ Wire Wire Line
 Wire Wire Line
 	7800 3050 7800 3700
 $Comp
-L Lamp LA1
+L rv_9_schematic-rescue:Lamp LA1
 U 1 1 5B689464
 P 1350 4950
 F 0 "LA1" H 1375 5100 50  0000 L CNN
@@ -304,7 +278,7 @@ $EndComp
 Wire Wire Line
 	1350 2450 1350 4750
 $Comp
-L LCL G13
+L AvionicSchematic:LCL G13
 U 1 1 5B68A056
 P 7800 4700
 F 0 "G13" H 7875 4825 60  0000 C CNN
@@ -315,7 +289,7 @@ F 3 "" H 7800 4700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LCL G8
+L AvionicSchematic:LCL G8
 U 1 1 5B68A3B4
 P 4000 4925
 F 0 "G8" H 4075 5050 60  0000 C CNN
@@ -372,9 +346,9 @@ TRIM-IND-LT2
 Text Notes 1800 4150 0    60   ~ 0
 Instrument\nLights
 Wire Wire Line
-	3500 700  3500 1250
+	3500 700  3500 825 
 Wire Wire Line
-	3100 825  4050 825 
+	3100 825  3500 825 
 Wire Wire Line
 	3500 700  4050 700 
 Connection ~ 3500 825 
@@ -383,7 +357,7 @@ Text Label 3775 675  0    60   ~ 0
 Text Label 3775 825  0    60   ~ 0
 34
 $Comp
-L Lamp LA3
+L rv_9_schematic-rescue:Lamp LA3
 U 1 1 5B7A9B14
 P 4175 1425
 F 0 "LA3" H 4200 1575 50  0000 L CNN
@@ -394,7 +368,7 @@ F 3 "" V 4175 1525 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Lamp LA5
+L rv_9_schematic-rescue:Lamp LA5
 U 1 1 5B7A9BEE
 P 4900 1425
 F 0 "LA5" H 4925 1575 50  0000 L CNN
@@ -412,7 +386,7 @@ Wire Wire Line
 Wire Wire Line
 	4900 1175 4900 1225
 $Comp
-L LCL G9
+L AvionicSchematic:LCL G9
 U 1 1 5B7AC223
 P 4175 1900
 F 0 "G9" H 4250 2025 60  0000 C CNN
@@ -423,7 +397,7 @@ F 3 "" H 4175 1900 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LCL G11
+L AvionicSchematic:LCL G11
 U 1 1 5B7AC34B
 P 4900 1900
 F 0 "G11" H 4975 2025 60  0000 C CNN
@@ -434,7 +408,7 @@ F 3 "" H 4900 1900 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L POT RV1
+L rv_9_schematic-rescue:POT RV1
 U 1 1 5B7AC93A
 P 3500 1400
 F 0 "RV1" V 3325 1400 50  0000 C CNN
@@ -445,7 +419,7 @@ F 3 "" H 3500 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LCL G7
+L AvionicSchematic:LCL G7
 U 1 1 5B7ACAFA
 P 3500 1825
 F 0 "G7" H 3575 1950 60  0000 C CNN
@@ -460,10 +434,20 @@ Wire Wire Line
 Wire Wire Line
 	3850 1400 3850 1175
 Wire Wire Line
-	3850 1175 4900 1175
+	3850 1175 4175 1175
 Connection ~ 4175 1175
 Text Label 3200 825  0    60   ~ 0
 40
 Text HLabel 1100 1475 0    60   Input ~ 0
 MAIN-BUS
+Wire Wire Line
+	2800 2450 2850 2450
+Wire Wire Line
+	3500 825  3500 1250
+Wire Wire Line
+	3500 825  4050 825 
+Wire Wire Line
+	2850 2450 3100 2450
+Wire Wire Line
+	4175 1175 4900 1175
 $EndSCHEMATC
