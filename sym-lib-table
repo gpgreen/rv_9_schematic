@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name rv_9_schematic-rescue)(type Legacy)(uri ${KIPRJMOD}/rv_9_schematic-rescue.lib)(options "")(descr ""))
+  (lib (name AvionicSchematic)(type Legacy)(uri ${KIPRJMOD}/../libraries/AvionicSchematic.lib)(options "")(descr ""))
+)
